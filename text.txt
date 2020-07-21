@@ -4,59 +4,16 @@ echo "My Demo bash script for my git repo"
 echo
 echo "Script starts now..."
 echo
-echo "The first script demonstrates comparison"
-
-echo "First i'm going to define two variables; num1 ans num2"
-
-num1=2
-num2=4
-
-if [ $num1 -gt $num2 ]
-
-then
-
- echo "$num1 is greater than $num2"
-
-else
-
- echo "$num1 is less than $num2"
-
-fi
-
-echo "My next script is a function and i will be using a function to install the package docker"
+echo "This script will be using a function to install the package docker"
 
 function install_docker () {
 
 sudo yum install -y docker
 
+             }
+
 install_docker
 
-
-echo "This script checks if a file called file1 exist
-
-file=file1
-
-if [ -e $file ]
- then
-echo "$file exist"
-fi
-
-echo "This script will find out if file1 above is executable"
-echo
-if [ -x $file ]
-then
-echo "$file is executable"
-fi
-echo "Script checks to see if file1 above is writable"
-echo
-if [ -w $file ]
-then
-echo "$file is writable"
-else
-echo "$file is not writable"
-
-fi
-echo
 echo "This is a simple script to backup my log messages in my home directory"
 echo "copying /var/log/messages..."
 
